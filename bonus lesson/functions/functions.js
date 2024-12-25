@@ -17,7 +17,7 @@ function input(type = "num") {
       do {
         value = prompt("Enter task number");
       } while (!value || isNaN(value) || value < 1 || value > 4);
-      return parseInt(value);
+      return Math.round(value);
   }
 }
 
