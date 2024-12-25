@@ -13,6 +13,26 @@ function input(type = "num") {
         value = prompt("Enter number");
       } while (!value || isNaN(value));
       return parseFloat(value);
+    case "menu":
+      do {
+        value = prompt("Enter task number");
+      } while (!value || isNaN(value) || value < 1 || value > 4);
+      return parseInt(value);
+  }
+}
+
+function description(task) {
+  switch (task) {
+    case 0:
+      return "SELECT TASK  (1 ... 4)";
+    case 1:
+      return "Enter text to be translated into UPPERCASE";
+    case 2:
+      return "Select the array size by number";
+    case 3:
+      return "Select the DAY of the week";
+    case 4:
+      return "Select AGE";
   }
 }
 
