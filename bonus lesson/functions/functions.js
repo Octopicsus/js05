@@ -28,7 +28,7 @@ function description(task) {
     case 1:
       return "Enter text to be translated into UPPERCASE";
     case 2:
-      return "Select the array size by number";
+      return "Select the array COUNT";
     case 3:
       return "Select the DAY of the week";
     case 4:
