@@ -1,7 +1,7 @@
 // TASK SELECTOR
 
 alert(description(0));
-let taskSelect = input("menu");
+const taskSelect = input("menu");
 
 //
 //--------------
