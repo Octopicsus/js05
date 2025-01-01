@@ -3,8 +3,6 @@
 
 separatorTitle("Store Window");
 
-const profuctKeys = Object.keys(brandsPhones);
-
 showBrands();
 
 //

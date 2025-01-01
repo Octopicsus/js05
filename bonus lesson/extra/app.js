@@ -3,6 +3,8 @@ function separatorTitle(title) {
 }
 
 function showBrands() {
+  const profuctKeys = Object.keys(brandsPhones);
+
   for (let key of profuctKeys) {
     console.log(`
    Brand: ${key}\n
@@ -14,7 +16,7 @@ function selectBrand() {
   let selectedBrand;
   do {
     selectedBrand = prompt("Enter the brand you want to buy in");
-  } while (!profuctKeys.includes(selectedBrand));
+  } while (false);
   return brandsPhones[selectedBrand];
 }
 

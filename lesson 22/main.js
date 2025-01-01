@@ -114,4 +114,4 @@ console.log('#5. JavaScript homework example file')
 // console.log(myTriple(4)) // = myMul(3, 4) = 12
 // console.log(myTriple(5)) // = myMul(3, 5) = 15
 
-export { counter, counterFactory, myPow, myMax, myMul, myDouble, myTriple }
+// export { counter, counterFactory, myPow, myMax, myMul, myDouble, myTriple }
