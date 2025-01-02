@@ -93,12 +93,31 @@ separatorTitle("task - 03");
 //
 // ---------------- TASK - 03 ----------------
 
+// const myPrint = function (a, b, res) {
+//   return `${a} ^ ${b} = ${res}`;
+// };
+
+// const myPow = function (a, b, myPrint) {
+//   let result = Math.pow(a, b);
+//   return myPrint(a, b, result);
+// };
+
 const myPrint = function (a, b, res) {
   return `${a} ^ ${b} = ${res}`;
 };
 
 const myPow = function (a, b, myPrint) {
-  let result = Math.pow(a, b);
+  const recursive = function (num, powNum) {
+    if (powNum === 0) {
+      return 1;
+    }
+    if (powNum > 0) {
+      return num * recursive(num, powNum - 1);
+    }
+    return 1 / recursive(num, -powNum);
+  };
+
+  let result = recursive(a, b);
   return myPrint(a, b, result);
 };
 
